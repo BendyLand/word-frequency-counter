@@ -23,7 +23,7 @@ func displayCountedWords(original string, wordCounts map[string]int) {
 	fmt.Println("Each word and its respective number of occurrences in the text:")
 	numWords := 0
 	for k, v := range wordCounts {
-		caser := cases.Title(language.Und)
+		caser := cases.Title(language.English)
 		k = caser.String(k) // title case
 		if v == 1 {
 			fmt.Printf("'%s' is found 1 time in the text.\n", k)
