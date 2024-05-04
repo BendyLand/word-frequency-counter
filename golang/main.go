@@ -102,7 +102,7 @@ func removeNonLetterChars(words []string) []string {
 
 func splitIntoWords(text string) []string {
 	var result []string
-	lines := strings.Split(text, "\n")
+	lines := strings.Fields(text)
 	for _, line := range lines {
 		words := strings.Split(line, " ")
 		for _, word := range words {
