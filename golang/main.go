@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"strings"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
+	"os"
+	"strings"
 )
 
 func main() {
